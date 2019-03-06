@@ -18,12 +18,14 @@ The exercise is to clean up this code and put it in a sensible structure, using 
 - The code must run in the latest 8.x version of Node
 - The code must be able to be built and run with npm commands - no extra scripts or tools that can't be run started from what's in the package.json
 - You are welcome to introduce any libraries you feel are useful, but these must run on Windows, Mac, and Linux
+- Use React as a Single Page App
+- Generalise the filtering system (e.g. so you can select all people who are both male and 20 years old)
 
 ## Guidance
 
 There is no "right answer", but some good things to do might be:
 
-- Use React + Redux, or some other single page app framework to avoid having to make page reloads and to generalise the filtering system (e.g. so you can select all people who are both male and 20 years old)
+- Use Redux, or your favourite state management library
 - Introduce a task runner (we like Webpack :-)) with a transpiler to take advantage of even more modern ES features
 - Separate concerns: untangle business logic, web serving, and data access
 - Use ES6+ features (only the ones available in Node 6.x) to improve the readability, scoping, reuse, and checking
