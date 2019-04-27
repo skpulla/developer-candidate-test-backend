@@ -4,7 +4,10 @@
   "description": "Refactoring exercise for Node",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "lint": "./node_modules/eslint/bin/eslint.js src",
+    "prebuild": "./node_modules/eslint/bin/eslint.js src",
+    "build": "./node_modules/@babel/cli/bin/babel.js src --out-dir dist",
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,14 @@
     "express": "^4.15.3",
     "handlebars": "^4.0.10",
     "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
   }
 }
