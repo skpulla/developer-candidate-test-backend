@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "prebuild": "./node_modules/eslint/bin/eslint.js src",
-    "build": "./node_modules/@babel/cli/bin/babel.js src --out-dir dist",
+    "build": "./node_modules/@babel/cli/bin/babel.js src --out-dir dist --copy-files",
     "start": "npm run build && node dist/server.js",
-    "dev-start": "nodemon --exec babel-node src/server.js",
+    "dev-start": "nodemon --exec babel-node src/server.js --ignore '/data/*'",
     "test": "cross-env NODE_ENV=test nyc mocha -- --recursive --exit"
   },
   "repository": {

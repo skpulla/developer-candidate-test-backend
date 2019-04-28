@@ -1,5 +1,7 @@
 import { Router } from 'express';
 
+import PeopleController from '../controllers/peopleController';
+
 const router = Router();
 
 /**
@@ -8,6 +10,6 @@ const router = Router();
  *    get:
  *      description: This should return all the people
  */
-router.get('/', (req, res) => res.send({ hello: 'world' }));
+router.get('/', (req, res) => PeopleController.getPeople(req, res));
 
 export default router;
