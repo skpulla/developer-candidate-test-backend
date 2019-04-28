@@ -45,6 +45,18 @@ describe('/people tests', () => {
       });
   });
 
+  it('skip filter should return an array', (done) => {
+    request(app)
+      .get('/people?skip=1')
+      .set('Accept', 'application/json')
+      .expect(200)
+      .end((err, results) => {
+        if (err) return done(err);
+        results.body.should.be.an('array');
+        done();
+      });
+  });
+
   it('gender filter should return only male', (done) => {
     request(app)
       .get('/people?gender=male')
