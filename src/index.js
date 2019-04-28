@@ -10,7 +10,6 @@ const app = express();
 
 app.use(morgan('combined', { stream: winston.stream }));
 
-
 app.get('/', (req, res) => res.send('Received a GET HTTP method'));
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swagger.specs));
 app.use('/people', routes.people);

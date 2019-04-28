@@ -1,9 +1,7 @@
-const _ = require('underscore');
 const request = require('supertest');
 const appRoot = require('app-root-path');
-const should = require('chai').should();
 
-const { app } = require(`${appRoot  }/src/index.js`);
+const { app } = require(`${appRoot.path}/src/index.js`);
 
 describe('default', () => {
   it('GET /', (done) => {

@@ -2,8 +2,6 @@ import swaggerJsdoc from 'swagger-jsdoc';
 
 const appRoot = require('app-root-path');
 
-console.log('appRoot', appRoot);
-
 const options = {
   swaggerDefinition: {
     info: {
