@@ -13,7 +13,13 @@ Browse to [http://localhost:3000](http://localhost:3000)
 
 ## Notes
 - The project has been split into 2 repositories. This repository is only for the backend API.
-- The API can be accessed at https://api.ambit.darkskape.com and a playground API can be accessed at https://api-test.ambit.darkskape.com
+- Added 1000 sample records generated using [Mockaroo](https://mockaroo.com/)
+- The API has been deployed on AWS and can be accessed at https://api.ambit.darkskape.com. A playground API can be accessed at https://api-test.ambit.darkskape.com. Following API queries are supported:
+  - Everyone: https://api.ambit.darkskape.com/people
+  - Male: https://api.ambit.darkskape.com/people?gender=male
+  - Female: https://api.ambit.darkskape.com/people?gender=female
+  - Everyone Aged 50: https://api.ambit.darkskape.com/people?age=50
+  - Male and Aged 20: https://api.ambit.darkskape.com/people?gender=male&age=20
 - Swagger API Documentation is avialable at https://api.ambit.darkskape.com/docs
 - Postman
   - Download the collection from https://www.getpostman.com/collections/991fffb4d65504c8cf05
