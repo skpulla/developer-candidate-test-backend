@@ -41,3 +41,6 @@ Browse to [http://localhost:3000](http://localhost:3000)
   - AWS Elastic Load Balancer has been set up for the app which currently runs on only 1 instance.
   - Load balancer accepts only HTTPS traffic.
   - Route 53 is configured to use the load balancer as the target for api.ambit.darkskape.com.
+- Currently has 100% test code coverage.
+  - <a href="https://imgur.com/Pa4SMxQ"><img src="https://i.imgur.com/Pa4SMxQ.png" title="source: imgur.com" /></a>
+  - <a href="https://imgur.com/9FaGH62"><img src="https://i.imgur.com/9FaGH62.png" title="source: imgur.com" /></a>
