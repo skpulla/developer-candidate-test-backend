@@ -1,7 +1,6 @@
 const request = require('supertest');
-const appRoot = require('app-root-path');
 
-const { app } = require(`${appRoot.path}/src/index.js`);
+const { app } = require('../src/server.js');
 
 describe('default', () => {
   it('GET /', (done) => {
