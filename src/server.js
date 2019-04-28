@@ -10,14 +10,14 @@ const app = express();
 
 app.use(morgan('combined', { stream: winston.stream }));
 
-app.get('/', swaggerUi.serve, swaggerUi.setup(swagger.specs));
+app.get('/', (req, res) => res.send('Welcome to Ambit API'));
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swagger.specs));
 app.use('/people', routes.people);
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  winston.info(`Example app listening on port ${port}!`);
+  winston.info(`Started Ambit API on port ${port}!`);
 });
 
 module.exports.app = app;
