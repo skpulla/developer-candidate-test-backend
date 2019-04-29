@@ -24,6 +24,7 @@ Browse to [http://localhost:3000](http://localhost:3000)
 - Postman
   - Download the collection from https://www.getpostman.com/collections/991fffb4d65504c8cf05
   - \[ OR \] run in postman using this button [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/991fffb4d65504c8cf05)
+- Frontend repo can be found at https://github.com/skpulla/developer-candidate-test-frontend
 
 ## Features
 - Runs on the latest version of Node 8.x (and not Node 10.x LTS or 12.x)
